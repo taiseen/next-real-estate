@@ -13,7 +13,7 @@ export const Banner = (props) => {
 
   return (
     <Flex flexWrap='wrap' justifyContent='center' alignItems='center' m='10'>
-
+      
       <Image src={imageUrl} width={500} height={300} alt={title1} />
 
       <Box p='5' ml='5'>

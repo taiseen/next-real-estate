@@ -17,7 +17,7 @@ const PropertyDetails = ({ propertyDetails }) => {
     description, type, purpose, furnishingStatus, amenities, photos } = propertyDetails;
 
   return (
-    <Box maxWidth='1000px' margin='auto' p='4' mt='70px'>
+    <Box maxWidth='1000px' margin='auto' p='4' mt='72px'>
 
       {
         // call this 🟨ImageScrollbar🟨 <Component /> for displaying Images[array]... 
@@ -68,12 +68,22 @@ const PropertyDetails = ({ propertyDetails }) => {
           rather then process those <tag's /> according to their nature...
           that why we use 🟨dangerouslySetInnerHTML🟨 attribute here...
         */}
-        <Text lineHeight='2' color='gray.600' textAlign='justify' dangerouslySetInnerHTML={{ __html: description }} />
+        <Text
+          lineHeight='2'
+          color='gray.600'
+          textAlign='justify'
+          dangerouslySetInnerHTML={{ __html: description }} />
         {/* {description}</Text> */}
       </Box>
 
 
-      <Flex flexWrap='wrap' textTransform='uppercase' justifyContent='space-between'>
+      <Flex
+        mt='6'
+        mb='8'
+        flexWrap='wrap'
+        textTransform='uppercase'
+        justifyContent='space-between'
+      >
 
         <Flex
           p='3'

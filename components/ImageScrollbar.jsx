@@ -5,7 +5,7 @@ import { useContext } from 'react';
 import Image from 'next/image';
 
 
-// this function pass at attribute={...} for navigation
+// this function pass inside attribute={...} for navigation
 const LeftArrow = () => {
 
     // <== <== <== <== <== <== <== <== <== for going to
@@ -26,7 +26,7 @@ const LeftArrow = () => {
 }
 
 
-// this function pass at attribute={...} for navigation
+// this function pass inside attribute={...} for navigation
 const RightArrow = () => {
 
     // for going to ==> ==> ==> ==> ==> ==> ==> ==> ==>
@@ -71,9 +71,9 @@ export default function ImageScrollbar({ photos }) {
                             width={1000}
                             height={500}
                             src={item.url}
+                            placeholder="blur"
                             blurDataURL={item.url}
                             alt='photos of property'
-                            placeholder="Blur image is loading..."
                             sizes="(max-width: 500px) 100px, (max-width: 1023px) 400px, 1000px" />
                     </Box>
                 ))

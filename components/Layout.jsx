@@ -3,6 +3,7 @@ import Footer from './Footer';
 import Navbar from './Navbar';
 import Head from 'next/head';
 
+
 // this <Component /> use/call at 🟨../pages/_app.js🟨 
 // for structuring this web application...
 export default function Layout({ children }) {

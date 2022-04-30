@@ -4,8 +4,6 @@ import NProgress from 'nprogress';
 import Router from 'next/router';
 import Head from 'next/head';
 import '../style/progressBar.css'
-// import favicon from '../public/favicon.ico'
-
 
 
 function MyApp({ Component, pageProps }) {
@@ -22,7 +20,7 @@ function MyApp({ Component, pageProps }) {
     NProgress.start();
   });
 
-  // Stop Loading, When Page lode complete...
+  // Stop Loading, When Page loading is complete...
   Router.events.on('routeChangeComplete', () => {
     NProgress.done();
   });
@@ -31,15 +29,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link
-          rel='stylesheet'
-          crossOrigin='anonymous'
-          referrerPolicy='no-referrer'
-          href='https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css' integrity='sha512-42kB9yDlYiCEfx2xVwq0q7hT4uf26FUgSIZBK8uiaEnTdShXjwr8Ip1V4xGJMg3mHkUt9nNuTDxunHF0/EgxLQ=='
-        />
-
-        {/* <link rel="shortcut icon" href="../public/favicon.ico" /> */}
-        {/* <link rel="shortcut icon" href={favicon} /> */}
+        <link rel='stylesheet' referrerPolicy='no-referrer'
+          href='https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css' />
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
 
